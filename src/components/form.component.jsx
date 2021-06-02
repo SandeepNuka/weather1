@@ -25,7 +25,7 @@ const Form = (props) => {
             />
           </div>
           <div className="col-md-3">
-            <button className="btn btn-outline-warning">Get Weather</button>
+            <button className="btn btn-outline-warning">Get Weather1</button>
           </div>
         </div>
       </form>
