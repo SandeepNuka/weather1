@@ -35,7 +35,7 @@ const Form = (props) => {
 
 function error() {
   return (
-    <div className="alert alert-danger " role="alert">
+    <div className="alert alert-danger my-3 " role="alert">
       Please Enter City and Country
     </div>
   );
