@@ -85,17 +85,19 @@ class App extends React.Component {
         temp_max: this.calCulateCelsius(responce.main.temp_max),
         temp_min: this.calCulateCelsius(responce.main.temp_min),
         description: responce.weather[0].description,
+        error: false,
       });
       this.get_weather(this.weathericon, responce.weather[0].id);
     } else {
       this.setState({ error: true });
+      console.log();
     }
   };
 
   render() {
     return (
       <div className="App">
-        <Form loadweather={this.getweather} />
+        <Form loadweather={this.getweather} error1={this.state.error} />
         <Weather
           city={this.state.city}
           country={this.state.country}
@@ -105,7 +107,6 @@ class App extends React.Component {
           temp_celsius={this.state.celsius}
           description={this.state.description}
           weathericon1={this.state.icon}
-          error={this.state.error}
         />
       </div>
     );
