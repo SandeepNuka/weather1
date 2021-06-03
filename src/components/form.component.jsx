@@ -12,7 +12,7 @@ const Form = (props) => {
               className="form control"
               name="city"
               autoComplete="off"
-              placeholder="city"
+              placeholder="City"
             />
           </div>
           <div className="col-md-3">
@@ -21,10 +21,10 @@ const Form = (props) => {
               className="form control"
               name="country"
               autoComplete="off"
-              placeholder="country"
+              placeholder="Country"
             />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 py-1">
             <button className="btn btn-outline-warning">Get Weather</button>
           </div>
         </div>
